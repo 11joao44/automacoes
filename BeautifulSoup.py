@@ -2,7 +2,6 @@
 # Instale o BeautifulSoup p/ pega os dados dos elementos html `pip install beautifulsoup4`
 # Instale o Openpyxl p/ criar arquivos .xlss(Excel) `pip install openpyxl`
 
-
 import requests
 import openpyxl
 from bs4 import BeautifulSoup

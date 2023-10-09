@@ -1,3 +1,6 @@
+# Instale selenium p/ controlar um navegador `pip install selenium`
+# Instale webdriver_manager p/ atualizar o navegador `pip install webdriver_manager`
+
 from selenium import webdriver # importando a função para abrir o navegador
 from webdriver_manager.chrome import ChromeDriverManager # importando função que atualizará o webdriver
 from selenium.webdriver.chrome.service import Service # importando função para executar webdriver_manager
