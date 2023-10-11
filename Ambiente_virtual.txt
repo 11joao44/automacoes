@@ -1,0 +1,27 @@
+---------------------------- Ambiente virtual Padrão Python -----------------------------------
+
+• Criar ambiente virtual: no terminal > `python -m venv nome_do_ambiente`
+• Ativar o ambiente virtual: no terminal > `.\nome_do_ambiente\Scripts\activate`
+• Desative o ambiente virtual: no terminal > `deactivate`
+
+-----------------------------------------------------------------------------------------------
+
+---------------------------- Ambiente virtual Anaconda ----------------------------------------
+
+• Criar Anaconda ambiente virtual: no terminal > `conda create -n nome_do_ambiente python=3.11`
+• Ativar o ambiente virtual Anaconda: no terminal > `source activate nome_do_ambiente`
+• Desative o ambiente virtual: no terminal > `deactivate`
+
+-----------------------------------------------------------------------------------------------
+
+------------------------------ Ambiente virtual Lib Virtual venv ------------------------------
+
+• Instalar Biblioteca: no terminal > `pip install virtualenv`
+• Criar ambiente virtual: no terminal > `virtualenv nome_do_ambiente`
+• Ativar o ambiente virtual: no terminal > `source nome_do_ambiente/Scripts/activate`
+
+-----------------------------------------------------------------------------------------------
+
+# Ambiente virtual é recomendado para quando for hospedar um código em nuvem 
+# impedindo de passar todas as bibliotecas da maquinas para o servidor 
+# com a finalidade de econimizar espaço e aumentar desempenho

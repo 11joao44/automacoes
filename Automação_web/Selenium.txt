@@ -1,0 +1,7 @@
+---------------------------- Selenium Automação ---------------------------
+
+• Instalação: no terminal > `pip install selenium`
+• Instalação: no terminal > `pip install webdriver_manager`
+• Documentação: https://www.selenium.dev/blog/2023/
+
+---------------------------------------------------------------------------

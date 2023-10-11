@@ -1,10 +1,7 @@
-# Instale o requests p/ fazer a requisição de uma url `pip install requests`
-# Instale o BeautifulSoup p/ pega os dados dos elementos html `pip install beautifulsoup4`
-# Instale o Openpyxl p/ criar arquivos .xlss(Excel) `pip install openpyxl`
-
-import requests
-import openpyxl
-from bs4 import BeautifulSoup
+# bibliotecas necessárias
+import requests # Biblioteca fazer fazer requisição
+import openpyxl # Biblioteca para criar arquivo Excel
+from bs4 import BeautifulSoup # Biblioteca para analisar código HTML
 
 workbook = openpyxl.Workbook() # Criar um novo arquivo Excel
 
@@ -15,10 +12,10 @@ sheet['A1'] = 'Título do jogo'
 sheet['B1'] = 'Preço do jogo'
 
 url = 'https://www.nuuvem.com/br-pt/catalog/price/promo/sort/release-date/sort-mode/desc'
-requisicao = requests.get(url)
-print(requisicao)
+requisicao = requests.get(url) # entrar no site fornecido 
+print(requisicao) # para observar a resposta da requisição
 
-site = BeautifulSoup(requisicao.text, "html.parser") # Analisar o HTML com BeautifulSoup
+site = BeautifulSoup(requisicao.text, "html.parser") # Analisa o HTML do site com BeautifulSoup
 titulos = site.find_all(class_='product-title') # Encontrar todos os elementos com a classe "product-title" para obter os títulos
 precos = site.find_all(class_='product-price--val') # Encontrar todos os elementos com a classe "product-price--val" para obter os preços
 
